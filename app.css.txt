@@ -1,0 +1,134 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #E0E0E0; /* Light gray for text */
+    line-height: 1.6;
+    background: linear-gradient(135deg, #0A0F1D 0%, #1A0D3B 50%, #0A0F1D 100%); /* Cosmic gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    scroll-behavior: smooth;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF; /* White for headings */
+    margin-bottom: 0.5em;
+}
+
+header {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #6C63FF; /* A subtle hover color */
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 4em 10%;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+    min-height: 80vh; /* Ensures sections take up most of viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight differentiation between sections */
+}
+
+.hero {
+    min-height: 90vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #6C63FF;
+    color: white;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 1.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: #534CAF;
+    transform: translateY(-3px);
+}
+
+footer {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #B0B0B0;
+    font-size: 0.9em;
+}
+
+/* Scroll Animations (using basic CSS for now, can be enhanced with JS if needed) */
+/* This is more for smooth scroll-behavior, actual element animations would require more specific classes/JS */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    section {
+        padding: 3em 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    .button {
+        padding: 0.6em 1.5em;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO NOOS</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Bienvenidos al Proyecto Noos</h1>
+        <p>Tu visión, nuestra realidad. Creando experiencias digitales únicas.</p>
+        <a href="#sobre-nosotros" class="button">Descubre Más</a>
+    </section>
+
+    <section id="sobre-nosotros">
+        <h2>Nuestra Historia</h2>
+        <p>Somos un equipo apasionado dedicado a transformar ideas en soluciones web innovadoras. Con un enfoque en el diseño intuitivo y la funcionalidad robusta, nos esforzamos por superar las expectativas de nuestros clientes.</p>
+        <p>Creemos en el poder de la tecnología para conectar y enriquecer vidas, y nos comprometemos a construir plataformas que no solo se vean bien, sino que también funcionen perfectamente.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos una amplia gama de servicios de desarrollo web, desde sitios interactivos hasta complejas aplicaciones web. Nuestros servicios incluyen:</p>
+        <ul>
+            <li>Diseño y desarrollo de sitios web personalizados.</li>
+            <li>Optimización para motores de búsqueda (SEO).</li>
+            <li>Mantenimiento y soporte web.</li>
+            <li>Consultoría digital.</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Listo para comenzar tu proyecto? Nos encantaría escuchar tus ideas. Ponte en contacto con nosotros para una consulta gratuita.</p>
+        <p>Email: info@proyectonoos.com</p>
+        <p>Teléfono: +XX XXXX XXXX</p>
+        <form>
+            <input type="text" placeholder="Tu Nombre">
+            <input type="email" placeholder="Tu Email">
+            <textarea placeholder="Tu Mensaje"></textarea>
+            <button type="submit" class="button">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Proyecto Noos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
