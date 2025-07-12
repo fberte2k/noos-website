@@ -1,1 +1,0 @@
-export default function AboutNOOS() { return <section><h2>About NOOS</h2><p>This is the conscious bridge between humanity and AI.</p></section>; }
